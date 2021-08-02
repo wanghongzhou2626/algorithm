@@ -119,6 +119,9 @@ public class BinarySearch {
         boolean success = true;
         for (int i = 0; i < max; i++) {
             int[] ints = randomArrayList(100, 5);
+            /**
+             * 不要忘记排序  二分查找的过程实在有序的前提条件的
+             */
             Arrays.sort(ints);
             // copy出来两份数据
             int[] arr1 = copyArray(ints);

@@ -80,6 +80,39 @@ public class SelectSort {
     }
 
 
+
+
+    private static void printArray(int[] arr1) {
+        for (int i = 0; i < arr1.length; i++){
+            System.out.print(arr1[i] + " ");
+        }
+        System.out.println();
+    }
+
+    private static boolean isEquals(int[] arr1, int[] arr2) {
+        for (int i = 0; i < arr1.length ; i++) {
+            if (arr1[i] != arr2[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * copy 数组
+     * @param ints
+     * @return
+     */
+    private static int[] copyArray(int[] ints) {
+
+        int[] arr = new int[ints.length];
+
+        for (int i = 0; i < ints.length; i++){
+            arr[i] = ints[i];
+        }
+        return arr;
+    }
+
     public static void main(String[] args) {
         int max = 500000;
         boolean success = true;
@@ -112,37 +145,6 @@ public class SelectSort {
         System.out.println(success ? "success" : "fail");
 
 
-    }
-
-    private static void printArray(int[] arr1) {
-        for (int i = 0; i < arr1.length; i++){
-            System.out.print(arr1[i] + " ");
-        }
-        System.out.println();
-    }
-
-    private static boolean isEquals(int[] arr1, int[] arr2) {
-        for (int i = 0; i < arr1.length ; i++) {
-            if (arr1[i] != arr2[i]){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    /**
-     * copy 数组
-     * @param ints
-     * @return
-     */
-    private static int[] copyArray(int[] ints) {
-
-        int[] arr = new int[ints.length];
-
-        for (int i = 0; i < ints.length; i++){
-            arr[i] = ints[i];
-        }
-        return arr;
     }
 
 

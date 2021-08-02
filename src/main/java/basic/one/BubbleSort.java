@@ -79,15 +79,17 @@ public class BubbleSort {
 
 
     public static void main(String[] args) {
-        int max = 500000;
-
+        int max = 5000000;
+        boolean success = true;
         for (int i = 0; i < max; i++) {
-            int[] ints = randomArrayList(100, 3);
+            int[] ints = randomArrayList(100, 100);
 
             // copy出来两份数据
             int [] arr1 = copyArray(ints);
             int [] arr2 = copyArray(ints);
-
+            if (arr1 == null || arr2 == null) {
+                System.out.println(" some array is null ");
+            }
 
             noProblem(arr1);
             bubbleSort(arr2);
@@ -95,12 +97,13 @@ public class BubbleSort {
             //看看arr1 与 arr2 的数据是否完全一致
 
             if (!isEquals(arr1,arr2)){
+                success = false;
                 printArray(arr1);
-                break;
+                printArray(arr2);
             }
         }
 
-        System.out.println("success");
+        System.out.println(success ? "success" : "fail");
 
 
     }

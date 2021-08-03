@@ -10,6 +10,18 @@ import java.util.Arrays;
  */
 public class InsertSort {
 
+    /**
+     *
+     * 过程：
+     * 先让下标0-0位置上有序 这个位置只有一个数 默认有序
+     * 让下标0-1上有序,从1位置的数向前看 如果 1 位置数小于 0位置数就交换 否则什么也不做
+     * 想让arr[0-i] 上有序，所以从i位置一直往前看 i位置数不停的向左移动 一直到左边的数字不在比自己大了 停止移动
+     * 时间复杂度是与初始的数据状态有关的
+     *
+     *
+     * @param arr
+     */
+
     public static void insertSort(int[] arr){
         // 默认零位置数字有序 从1位置数字向前看
         for (int i = 1; i < arr.length ; i++) {

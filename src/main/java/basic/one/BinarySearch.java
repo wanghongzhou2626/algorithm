@@ -1,8 +1,6 @@
 package basic.one;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 /**
  * 二分查找 (数据有顺序 从小到大排列的情况 )某个数是否在数组中   按照二分的规模递归查找

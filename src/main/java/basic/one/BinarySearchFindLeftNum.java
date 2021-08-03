@@ -16,11 +16,11 @@ public class BinarySearchFindLeftNum {
         int mid = 0;
         int index = -1;
         while (L <= R) {
-            mid = L + ((R - L)/2);
-            if(arr[mid] >= num) {
+            mid = L + ((R - L) / 2);
+            if (arr[mid] >= num) {
                 index = mid;
                 R = mid - 1;
-            }else {
+            } else {
                 L = mid + 1;
             }
         }
@@ -60,9 +60,6 @@ public class BinarySearchFindLeftNum {
             //数组中数据也随机
             arr[i] = (int) ((Math.random() * (maxValue + 1)) - (Math.random() * (maxValue + 1)));
         }
-
-
-
 
 
         return arr;
@@ -140,7 +137,6 @@ public class BinarySearchFindLeftNum {
 
 
     }
-
 
 
 }

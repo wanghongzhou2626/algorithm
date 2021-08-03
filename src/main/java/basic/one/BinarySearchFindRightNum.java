@@ -5,29 +5,30 @@ import java.util.Arrays;
 
 /**
  * 在二分查询中 寻找小于等于某个数最右侧的位置
+ *
  * @author whz
  */
 public class BinarySearchFindRightNum {
 
 
-    public static int binarySearchFindRightNum(int[] arr, int num){
+    public static int binarySearchFindRightNum(int[] arr, int num) {
 
         int L = 0;
         int R = arr.length - 1;
         int index = -1;
         int mid = 0;
-        while (L <= R){
+        while (L <= R) {
 
-            mid = L + ((R - L)/2);
+            mid = L + ((R - L) / 2);
 
-            if(arr[mid] <= num){
+            if (arr[mid] <= num) {
                 index = mid;
                 L = mid + 1;
-            }else {
+            } else {
                 R = mid - 1;
             }
         }
-            return index;
+        return index;
 
     }
 
@@ -64,9 +65,6 @@ public class BinarySearchFindRightNum {
             //数组中数据也随机
             arr[i] = (int) ((Math.random() * (maxValue + 1)) - (Math.random() * (maxValue + 1)));
         }
-
-
-
 
 
         return arr;
@@ -144,8 +142,6 @@ public class BinarySearchFindRightNum {
 
 
     }
-
-
 
 
 }

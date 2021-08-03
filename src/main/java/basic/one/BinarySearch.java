@@ -72,9 +72,6 @@ public class BinarySearch {
         }
 
 
-
-
-
         return arr;
 
     }

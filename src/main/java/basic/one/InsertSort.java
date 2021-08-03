@@ -11,30 +11,28 @@ import java.util.Arrays;
 public class InsertSort {
 
     /**
-     *
      * 过程：
      * 先让下标0-0位置上有序 这个位置只有一个数 默认有序
      * 让下标0-1上有序,从1位置的数向前看 如果 1 位置数小于 0位置数就交换 否则什么也不做
      * 想让arr[0-i] 上有序，所以从i位置一直往前看 i位置数不停的向左移动 一直到左边的数字不在比自己大了 停止移动
      * 时间复杂度是与初始的数据状态有关的
      *
-     *
      * @param arr
      */
 
-    public static void insertSort(int[] arr){
+    public static void insertSort(int[] arr) {
         // 默认零位置数字有序 从1位置数字向前看
-        for (int i = 1; i < arr.length ; i++) {
+        for (int i = 1; i < arr.length; i++) {
             //每次循环都是后一个数字 一直向前看 知道不满足条件以后 模拟扑克牌插入过程
-            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1] ; j--){
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
                 //交换 然后继续
-                swap(arr,j, j+1);
+                swap(arr, j, j + 1);
             }
         }
     }
 
 
-    public static void swap(int [] arr, int i, int j){
+    public static void swap(int[] arr, int i, int j) {
         arr[i] = arr[i] ^ arr[j];
         arr[j] = arr[j] ^ arr[i];
         arr[i] = arr[i] ^ arr[j];
@@ -46,7 +44,6 @@ public class InsertSort {
      * 1.首先 你需要一个绝对正确的方法 可以是复杂度非常高的方法 或者 系统提供的一些方法
      * 2.制造一个数组随机发生器 就是样本量
      * 3.用绝对正确的方法 和你自己写的方法做测试 看看在大样本量下 你的算法是否是正确的。
-     *
      *
      * @param arr
      */
@@ -70,6 +67,7 @@ public class InsertSort {
 
     /**
      * 数组间复制的方法
+     *
      * @param arr
      * @return
      */
@@ -86,6 +84,7 @@ public class InsertSort {
 
     /**
      * 两个数组元素之间比较是否相等
+     *
      * @param arr1
      * @param arr2
      * @return
@@ -110,6 +109,7 @@ public class InsertSort {
 
     /**
      * 打印有问题的数组数据
+     *
      * @param arr
      */
     public static void printArray(int[] arr) {
@@ -124,6 +124,7 @@ public class InsertSort {
 
     /**
      * 测试主函数
+     *
      * @param args
      */
     public static void main(String[] args) {

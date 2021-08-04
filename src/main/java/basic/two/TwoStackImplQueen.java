@@ -3,6 +3,7 @@ package basic.two;
 import java.util.Stack;
 
 /**
+ * 使用两个栈 去实现一个队列    重点是 push栈的数据像 pop栈导的过程  add的时候需要push后进行导入
  * @author whz
  */
 public class TwoStackImplQueen {

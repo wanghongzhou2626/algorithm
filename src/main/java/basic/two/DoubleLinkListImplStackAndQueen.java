@@ -10,7 +10,7 @@ import java.util.Stack;
  *
  * @author whz
  */
-public class DoubleLinkListImplStack {
+public class DoubleLinkListImplStackAndQueen {
 
 
     public static class DoubleNode{

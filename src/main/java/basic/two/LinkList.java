@@ -77,19 +77,6 @@ public class LinkList {
         return list.get(N - 1);
 
 
-       /* Stack<Node> stack = new Stack<Node>();
-        Node pre = head;
-        stack.push(pre);
-        LinkedList linkList = new LinkedList();
-        while (head != null){
-            stack.push(head.next);
-            head = head.next;
-        }
-
-        while (stack != null){
-            linkList.add(stack.pop());
-        }
-        return (Node) linkList.getFirst();*/
     }
 
     /**

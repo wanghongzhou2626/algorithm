@@ -10,6 +10,53 @@ package basic.two;
  */
 public class ArrayImplQueen {
 
+    public static class MyQueen{
+
+        private int[] arr;
+        private int size;
+        private int pushi;
+        private int polli;
+        private int limit;
+
+
+        public MyQueen(int limit) {
+            this.arr = new int[limit];
+            this.size = 0;
+            this.polli = 0;
+            this.pushi = 0;
+            this.limit = 0;
+        }
+
+        public void add(int value){
+            if(size == limit){
+                throw new RuntimeException("queen is full");
+            };
+            size++;
+            arr[pushi] = value;
+            pushi = nextIndex(pushi);
+
+        }
+
+        public int peek(){
+            if(size == 0){
+                throw new RuntimeException("queen is empty");
+            }
+            size--;
+            int value = arr[polli];
+            polli = nextIndex(polli);
+            return value;
+        }
+
+        private int nextIndex(int i) {
+            return i < limit - 1 ? i + 1 : 0;
+        }
+
+
+
+    }
+
+
+
 
 
 

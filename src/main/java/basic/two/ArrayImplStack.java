@@ -64,7 +64,7 @@ public class ArrayImplStack {
             return false;
         }
         if (o1 == null && o2 == null) {
-            return true;
+             return true;
         }
         return o1.equals(o2);
     }

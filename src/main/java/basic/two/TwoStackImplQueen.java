@@ -16,6 +16,9 @@ public class TwoStackImplQueen {
         this.stackPush = new Stack<Integer>();
     }
 
+    /**
+     * 导数的原则 导必须pop为空 push必须导空
+     */
     public void pushToPop(){
         if (stackPop.isEmpty()) {
             while (!stackPush.isEmpty()){
@@ -33,7 +36,7 @@ public class TwoStackImplQueen {
         if (stackPop.empty() && stackPush.empty()) {
             throw new RuntimeException("Queue is empty!");
         }
-        pushToPop();
+        pushToPop();//如果倒数的过程没发生 就说明pop里还有东西 直接弹出就可以啦
         return stackPop.pop();
 
     }

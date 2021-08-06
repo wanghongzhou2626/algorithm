@@ -15,7 +15,7 @@ public class GetMinInStack {
 
 
     public static Integer getMinInStack(){
-        /**
+        /**1
          * 1.如果最小栈 与 数据栈都为空 说明没有元素
          */
 
@@ -54,9 +54,12 @@ public class GetMinInStack {
         }else if(value <= getMinInStack()){
             //当存入的值小于最小站中的值时，将这个值存入最小站。
             minStack.push(value);
+        } else {
+            //当前栈的栈顶更小 应该重复压入
+            minStack.push(minStack.peek());
         }
         dataStack.push(value);
-    }
+     }
 
 
 

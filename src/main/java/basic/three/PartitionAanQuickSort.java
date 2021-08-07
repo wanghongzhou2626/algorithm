@@ -96,4 +96,19 @@ public class PartitionAanQuickSort {
         return new int[]{less + 1, more};
     }
 
+
+    /**
+     * 上面代码 看着比较怪异 我应该把它改成经典的荷兰国旗问题。
+     */
+
+    /**
+     * 上面两个题 其实本质上都是在完partition的过程 实际上目的是要引出经典的快排算法 partition过程
+     * 快排 1.0 2.0 3.0
+     */
+
+
+
+
+
+
 }

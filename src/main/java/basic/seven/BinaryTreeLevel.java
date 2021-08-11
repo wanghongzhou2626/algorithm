@@ -19,11 +19,17 @@ public class BinaryTreeLevel {
         }
     }
 
+    /**
+     * 使用队列实现一个二叉树层序遍历
+     * @param head
+     */
     public static void level(Node head){
         if(head == null){
             return;
         }
         Queue<Node> queue = new LinkedList();
+        //层序遍历就是按照从左到右的顺序 依次打印出树中的节点 先把头节点放入 然后弹出 弹出节点有左孩子放入 有右孩子方法 队列是先进先出的
+        //然后再根据入队的节点依次找到他们的左右孩子并打印
         queue.add(head);
         while (!queue.isEmpty()){
             Node cur = queue.poll();

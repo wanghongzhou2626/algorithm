@@ -1,6 +1,5 @@
 package basic.seven;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.util.Stack;
 

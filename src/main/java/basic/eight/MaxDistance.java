@@ -48,6 +48,7 @@ public class MaxDistance {
     public static int getMaxDistance(Node x){
         return process(x).maxDistance;
     }
+
     public static Info process(Node x){
         if(x == null){
             return new Info(0, 0);
@@ -56,8 +57,8 @@ public class MaxDistance {
         Info leftInfo = process(x.left);
         Info rightInfo = process(x.right);
 
-        int height = leftInfo.height + rightInfo.height + 1;
-        int maxDistance = Math.max(Math.max(leftInfo.maxDistance, rightInfo.maxDistance),height);
+        int height = Math.max(leftInfo.height, rightInfo.height) + 1;
+        int maxDistance = Math.max(Math.max(leftInfo.maxDistance, rightInfo.maxDistance),leftInfo.height + rightInfo.height + 1);
         return new Info(maxDistance,height);
     }
 

@@ -19,4 +19,46 @@ public class MaxDistance {
      */
 
     //这道题 很容易想到的是  是否与x有关  说白了就是你的最长路径是否经过 x
+    //如果说不经过x 那么最大距离可能出现在左树上 或者 右树上最大距离
+    //如果说经过x 那么最大距离只有一种情况 x左树最左的节点 到 右树最右的节点。 那是不是需要知道 那是不是就是一棵树的高度呢 左高+右高+1
+    // info 的信息 高度 和 最大距离 两种情况的全集
+
+    public static class Node{
+        private int value;
+        private Node left;
+        private Node right;
+        public Node(int value){
+            this.value = value;
+        }
+    }
+
+    public static class Info{
+        //这个最大距离 可以分为两个大类   与x无关的时候 最大距离出现在左右子树中
+        private int maxDistance;
+        //与x有关的时候 最大距离是 x左树最左位置高度 + x右树最右位置高度 + 1
+        private int height;
+
+        public Info(int maxDistance, int height){
+            this.height = height;
+            this.maxDistance = maxDistance;
+        }
+
+    }
+
+    public static int getMaxDistance(Node x){
+        return process(x).maxDistance;
+    }
+    public static Info process(Node x){
+        if(x == null){
+            return new Info(0, 0);
+        }
+
+        Info leftInfo = process(x.left);
+        Info rightInfo = process(x.right);
+
+        int height = leftInfo.height + rightInfo.height + 1;
+        int maxDistance = Math.max(Math.max(leftInfo.maxDistance, rightInfo.maxDistance),height);
+        return new Info(maxDistance,height);
+    }
+
 }

@@ -37,7 +37,7 @@ public class UnionFind {
         public HashMap<V, Node<V>> nodes;
         /*记录包装后的节点他向上指的parents  这就是为什么不需要向上指的引用了 这个map表中都已经进行了记录 */
         public HashMap<Node<V>, Node<V>> parents;
-        /* 某一个node 他连接的nodes 数量*/
+        /* 代表节点 他连接的 nodes 数量*/
         public HashMap<Node<V>, Integer> sizeMap;
 
 

@@ -43,7 +43,7 @@ public class PrintAllPermutations {
             swap(str,index,i);
 
             process(str,index + 1,strList);
-
+            //因为是递归 最后需要回去  回到定以后 你要要字符串恢复原貌 继续搞搞搞搞  搞事情~~~~
             swap(str,index,i);
         }
 

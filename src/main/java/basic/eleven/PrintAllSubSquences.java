@@ -14,7 +14,8 @@ import java.util.Set;
  *
  * 字串指的是必须为连续的一串  比如 abcd 的字串 已0位置为开始  a ab  abc abcd  已b开头  b bc bcd  以c开头 c cd  以d开头 d
  *
- * 子序列并不是全排列  每个位置字符要不要都走一遍 但是元素的相对位置不能改动   abc 中 ba不是子序列
+ * 子序列 也是从左往右某个位置开始拿字符 可以不连续 相对次序不能乱  abc  不能有ba
+ * 子序列并不是全排列
  *
  *                            a（0）
  *                要b（1）              b不要（1）
@@ -44,7 +45,7 @@ public class PrintAllSubSquences {
             }
             return;
         }
-        //不选择当前这条路的情况下  说白了 先走一条不选择的路到底 只想不下去了 在走选择的路  然后在网上返
+        //不选择当前这条路的情况下  说白了 先走一条不选择的路到底 执行不下去了 在走选择的路  然后在网上返
         String no = path;
         process(chars,index + 1,ans,no);
         String yes = path + String.valueOf(chars[index]);

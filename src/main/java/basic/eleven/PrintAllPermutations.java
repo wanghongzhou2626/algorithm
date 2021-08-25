@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  *                                                       [abc]
  *                                    0 a 0              1 b 0                         2 c 0
 *                                    [abc]              [bac]                         [cba]
- *                  1 b 1                  1 b 2    1 a 1       1 a 2          1 b 1         1 b 2
+ *                  1 b 1                  2 c 1    1 a 1       2 c 1          1 b 1         2 a 1
  *                  [abc]                  [acb]    [bac]       [bca]          [cba]         [cab]
  *             2 c 2                       2 b 2    2 c 2       2 a 2          2 a 2         2 b 2
  *             [abc]                       [acb]    [bac]       [bca]          [cba]         [cab]

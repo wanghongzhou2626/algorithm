@@ -1,11 +1,43 @@
 package basic.eleven;
 
 
+import java.util.Stack;
+
 /**
  * 逆序一个栈 不使用额外空间
+ * 不能申请额外的数据结构
+ * 只能使用递归函数
+ *
  * @author whz
  */
 public class RevertStackNoNewSpace {
+
+    public static void reverse(Stack<Integer> stack){
+        if(stack.isEmpty()) {
+            return;
+        }
+        int i = f(stack);
+        reverse(stack);
+        stack.push(i);
+    }
+
+    /**
+     * 栈低的元素移除 上面的元素盖下来 返回移除掉的底部元素
+     * @param stack
+     * @return
+     */
+    private static int f(Stack<Integer> stack) {
+
+        int result = stack.pop();
+        if(stack.isEmpty()){
+            return result;
+        }else {
+            int last = f(stack);
+            stack.push(result);
+            return last;
+        }
+
+    }
 
 
 }

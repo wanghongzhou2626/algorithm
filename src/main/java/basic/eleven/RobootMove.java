@@ -1,6 +1,5 @@
 package basic.eleven;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 /**
  * @author whz
@@ -60,5 +59,13 @@ public class RobootMove {
         int s = way(7,3,4,5);
         System.out.println(s);
     }
+
+
+    /**
+     * 暴力递归改动态规划
+     *
+     */
+
+
 
 }

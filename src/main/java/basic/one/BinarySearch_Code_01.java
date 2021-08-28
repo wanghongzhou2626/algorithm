@@ -3,12 +3,12 @@ package basic.one;
 import java.util.Arrays;
 
 /**
- * 二分查找 (数据有顺序 从小到大排列的情况 )某个数是否在数组中   按照二分的规模递归查找
+ * 二分查找 (数据有顺序 从小到大排列的情况 )某个数是否在数组中   按照二分的规模查找
  * 时间复杂度O(logn)  空间复杂度O(1)
  *
  * @author whz
  */
-public class BinarySearch {
+public class BinarySearch_Code_01 {
 
 
     public static boolean binarySearch(int[] arr, int num) {
@@ -35,6 +35,39 @@ public class BinarySearch {
         }
         return arr[L] == num;
 
+    }
+
+
+    /**
+     * 复习code 二分查找
+     *
+     * @param arr
+     * @param num
+     * @return
+     */
+    public static boolean code_02(int[] arr, int num ){
+
+        if(arr == null || arr.length == 0){
+            return false;
+        }
+
+
+        int L = 0;
+        int R = arr.length - 1;
+        int mid = 0;
+
+
+        while (L < R){
+            mid = L + ((R -L)/2);
+            if(arr[mid] == num){
+                return true;
+            }else if (arr[mid] > num){
+                R = mid - 1;
+            }else {
+                L = mid + 1;
+            }
+        }
+        return arr[L] == num;
     }
 
 
@@ -129,7 +162,7 @@ public class BinarySearch {
             int value = (int) ((Math.random() * (100 + 1)) - (Math.random() * (100 + 1)));
             //System.out.println("value = " + value);
             boolean i1 = noProblem(arr1, value);
-            boolean i2 = binarySearch(arr2, value);
+            boolean i2 = code_02(arr2, value);
 
             //看看arr1 与 arr2 的数据是否完全一致
 

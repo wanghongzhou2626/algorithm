@@ -83,6 +83,72 @@ public class Code_03_PartitionAndQuickSort {
         return new int[]{less+1,more};
     }
 
+    /**
+     * 第一种快排方式 时间复杂度为O(N^2)
+     * @param arr
+     */
+    public static void quickSort1(int[] arr){
+        if(arr == null || arr.length < 2){
+            return;
+        }
+        process1(arr,0,arr.length-1);
+    }
+
+    private static void process1(int[] arr, int L, int R) {
+        if(L >= R){
+            return;
+        }
+        int mid = partition(arr, L, R);
+        process1(arr,L,mid-1);
+        process1(arr,mid,R);
+    }
+
+    /**
+     * 根据荷兰国旗partition 的快排 时间复杂度依然是O(n^2)
+     */
+
+    public static void quickSort(int[] arr){
+        if(arr == null || arr.length < 2){
+            return;
+        }
+        process2(arr,0,arr.length-1);
+    }
+
+    private static void process2(int[] arr, int L, int R) {
+        if(L >= R){
+            return;
+        }
+        //他返回的数组第一个元素 是等于区域第一个 第二个元素是等于区域最后一个 每次都是有可能搞定一批数的
+        int[] mid = threeColorLands(arr, L, R);
+        process2(arr,L,mid[0] - 1);
+        process2(arr,mid[1]+1,R);
+    }
 
 
+    /**
+     * 经典的随机快排  在随机划分值的情况下 时间复杂度可以达到 n*log n
+     *
+     */
+
+    public static void quickSort3(int[] arr){
+        if(arr == null || arr.length < 2){
+            return;
+        }
+
+        process3(arr,0,arr.length-1);
+    }
+
+    private static void process3(int[] arr, int L, int R) {
+
+        if(L >= R){
+            return;
+        }
+
+        int randIndex = L + (int) Math.random() * (R - L + 1);
+        swap(arr,randIndex,R);
+        int[] mid = threeColorLands(arr, L, R);
+        process3(arr,L,mid[0] - 1);
+        process3(arr,mid[1]+1,R);
+
+    }
 }

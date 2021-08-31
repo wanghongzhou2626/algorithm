@@ -1,0 +1,22 @@
+
+a
+java:S1192"FDefine a constant instead of duplicating this literal "move " 6 times.(£çûıÿÿÿÿ
+k	java:S117j"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ô±Âüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±½éöûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(£çûıÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(áÏÍ
+S	java:S106("9Replace this use of System.out or System.err by a logger.( ãªÈûÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(Ÿ•¼ñüÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(ê¿Éû
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(ÑÌÀüÿÿÿÿ
+S	java:S106E"9Replace this use of System.out or System.err by a logger.(ÒŞšòÿÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(åê›ª
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(ÑÊ“
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(äøù
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(¶ÖÇ¡
+M	java:S106l"9Replace this use of System.out or System.err by a logger.(ªŞŸG
+q
+java:S2234n"VParameters to func have the same names but not the same order as the method arguments.(¼Ê‚¿úÿÿÿÿ
+N	java:S106o"9Replace this use of System.out or System.err by a logger.(§šŞ¨
+l
+java:S2234p"VParameters to func have the same names but not the same order as the method arguments.(¬“„

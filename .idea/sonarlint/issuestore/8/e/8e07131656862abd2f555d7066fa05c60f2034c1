@@ -1,0 +1,28 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€‚Çð
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í©ç¹øÿÿÿÿ
+D
+java:S21409")Use "java.util.Random.nextInt()" instead.(»¹ãäýÿÿÿÿ
+D
+java:S2140=")Use "java.util.Random.nextInt()" instead.(ðÜ»øÿÿÿÿÿ
+D
+java:S2140=")Use "java.util.Random.nextInt()" instead.(ðÜ»øÿÿÿÿÿ
+e
+java:S1764="JCorrect one of the identical sub-expressions on both sides of operator "-"(ðÜ»øÿÿÿÿÿ
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(ÌÌä’
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+t
+java:S3012`"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(€‘óÄüÿÿÿÿ
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(Ø´Ð£úÿÿÿÿ
+>
+java:S2140w")Use "java.util.Random.nextInt()" instead.(ó„üd
+>
+java:S2140w")Use "java.util.Random.nextInt()" instead.(ó„üd
+_
+java:S1764w"JCorrect one of the identical sub-expressions on both sides of operator "-"(ó„üd
+Q	java:S125x"<This block of commented-out lines of code should be removed.(ÉƒÞÀ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(ð€õŽøÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Î Üñ
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ŽºÀÿ
+C
+java:S1144L"-Remove this unused private "isEquals" method.(—˜úü

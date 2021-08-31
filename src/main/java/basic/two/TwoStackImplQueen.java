@@ -17,7 +17,7 @@ public class TwoStackImplQueen {
     }
 
     /**
-     * 导数的原则 导必须pop为空 push必须导空
+     * 导数的原则 导必须pop为空 push必须导空  在进行操作的时候 add poll peek 全都进行 pushtopop
      */
     public void pushToPop(){
         if (stackPop.isEmpty()) {
@@ -33,7 +33,7 @@ public class TwoStackImplQueen {
     }
 
     public int poll(){
-        if (stackPop.empty() && stackPush.empty()) {
+        if (stackPop .empty() && stackPush.empty()) {
             throw new RuntimeException("Queue is empty!");
         }
         pushToPop();//如果倒数的过程没发生 就说明pop里还有东西 直接弹出就可以啦

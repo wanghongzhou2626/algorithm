@@ -1,0 +1,19 @@
+
+M
+java:S2589\"8Remove this expression which always evaluates to "false"(ª–—/
+M
+java:S2589\"8Remove this expression which always evaluates to "false"(ª–—/
+D
+java:S2140G")Use "java.util.Random.nextInt()" instead.(ºÎ‹Áýÿÿÿÿ
+?
+java:S2140K")Use "java.util.Random.nextInt()" instead.(ðîÏ€
+?
+java:S2140K")Use "java.util.Random.nextInt()" instead.(ðîÏ€
+`
+java:S1764K"JCorrect one of the identical sub-expressions on both sides of operator "-"(ðîÏ€
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(Ø´Ð£úÿÿÿÿ
+N	java:S106l"9Replace this use of System.out or System.err by a logger.(ŽºÀÿ
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(ÌÌä’
+S	java:S106u"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+u
+java:S3012Œ"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(€‘óÄüÿÿÿÿ

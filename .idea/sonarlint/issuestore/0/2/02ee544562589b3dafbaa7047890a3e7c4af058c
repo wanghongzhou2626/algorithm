@@ -1,0 +1,10 @@
+
+k	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢†ˆúÿÿÿÿ
+k	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢†ˆúÿÿÿÿ
+f	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íàêí
+f	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íàêí
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ×Õùÿÿÿÿ
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ×Õùÿÿÿÿ
+_
+java:S1128"IRemove this unused import 'org.omg.PortableInterceptor.SYSTEM_EXCEPTION'.(öØÁ
+M	java:S106X"9Replace this use of System.out or System.err by a logger.(ÄÁ´d

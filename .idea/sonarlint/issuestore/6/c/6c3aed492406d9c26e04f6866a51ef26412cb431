@@ -1,0 +1,20 @@
+
+†
+java:S1319K"kThe type of the "ans" object should be an interface such as "Set" rather than the implementation "HashSet".(ÂÔ³ùÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(¬÷É“şÿÿÿÿ
+J
+java:S3740 "/Provide the parametrized type for this generic.(¨âÉÇÿÿÿÿÿ
+E
+java:S3740:"/Provide the parametrized type for this generic.(¼´ßñ
+J
+java:S3740="/Provide the parametrized type for this generic.(ñòÃ…şÿÿÿÿ
+N
+java:S4973+"9Use the "equals" method if value comparison was intended.(ü™Ûq
+N
+java:S4973M"9Use the "equals" method if value comparison was intended.(ü™Ûq
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ
+t
+java:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ
+M	java:S106b"9Replace this use of System.out or System.err by a logger.(ƒÚáB

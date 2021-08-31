@@ -1,0 +1,32 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñ’ò«
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€‚Çğ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í©ç¹øÿÿÿÿ
+f	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€‚Çğ
+k	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í©ç¹øÿÿÿÿ
+x
+java:S41440"\Update this method so that its implementation is not identical to "binarySearch" on line 14.(ªƒ¥8¥ØŞ¸/
+b	java:S1000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªƒ¥
+D
+java:S2140d")Use "java.util.Random.nextInt()" instead.(»¹ãäıÿÿÿÿ
+D
+java:S2140h")Use "java.util.Random.nextInt()" instead.(ğÜ»øÿÿÿÿÿ
+D
+java:S2140h")Use "java.util.Random.nextInt()" instead.(ğÜ»øÿÿÿÿÿ
+e
+java:S1764h"JCorrect one of the identical sub-expressions on both sides of operator "-"(ğÜ»øÿÿÿÿÿ
+N	java:S106r"9Replace this use of System.out or System.err by a logger.(ÌÌä’
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+u
+java:S3012‹"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(€‘óÄüÿÿÿÿ
+T	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(Ø´Ğ£úÿÿÿÿ
+?
+java:S2140¢")Use "java.util.Random.nextInt()" instead.(ó„üd
+?
+java:S2140¢")Use "java.util.Random.nextInt()" instead.(ó„üd
+`
+java:S1764¢"JCorrect one of the identical sub-expressions on both sides of operator "-"(ó„üd
+R	java:S125£"<This block of commented-out lines of code should be removed.(ÉƒŞÀ
+O	java:S106±"9Replace this use of System.out or System.err by a logger.(ºÀÿ
+C
+java:S1144w"-Remove this unused private "isEquals" method.(—˜úü

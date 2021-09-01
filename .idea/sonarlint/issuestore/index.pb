@@ -33,15 +33,5 @@ c
 3src/main/java/basic/eleven/PrintAllSubSquences.java,6\c\6c3aed492406d9c26e04f6866a51ef26412cb431
 ^
 .src/main/java/basic/eleven/GetMoneyMethod.java,a\3\a3261a526d3a22ff891e09f0f1f1aa2289d1d03c
-a
-1src/main/java/basic/one/BinarySearch_Code_01.java,5\3\53622a11d46f1fdf177783946509d359c5eb32bb
-d
-4src/main/java/basic/one/BinarySearchFindLeftNum.java,8\e\8e07131656862abd2f555d7066fa05c60f2034c1
-e
-5src/main/java/basic/one/BinarySearchFindRightNum.java,8\d\8d786782699c9124d4dce4cd76c256459f33b72f
-f
-6src/main/java/basic/one/BinarySearchFindPartSmall.java,5\1\51e2921e16aac8bc4f9cd7eff3e7a7fd7c93d11f
 W
 'src/main/java/basic/one/BubbleSort.java,6\4\64f5943ac47dbffe8d63cdcbd84476b82fe71277
-W
-'src/main/java/basic/one/FindOldNum.java,e\6\e6e2a04bae4c9f74694aacbb6fe6e6e546f7a01c

@@ -24,7 +24,7 @@ public class ArrayImplQueen {
             this.size = 0;
             this.polli = 0;
             this.pushi = 0;
-            this.limit = 0;
+            this.limit = limit;
         }
 
         public void add(int value){

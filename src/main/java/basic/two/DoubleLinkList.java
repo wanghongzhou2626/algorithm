@@ -31,7 +31,7 @@ public class DoubleLinkList {
             next = head.next;
             head.next = pre;
             //断开 当前头节点的前指针指向pre pre第一次是null  后续代表上一次的head
-            head.last = pre;
+            head.last = next;
             pre = head;
             head = next;
         }

@@ -1,6 +1,7 @@
 package basic.three;
 
 
+
 /**
  * review 求小和问题
  * 归并排序 merge 除了小于右边的 等于或者大于都是右边指针移动
@@ -9,16 +10,10 @@ public class Code_02_SmallNum {
 
 
     public static int smallNum(int[] arr){
-
-
         if(arr == null || arr.length < 2){
             return 0;
         }
-
-
         return process(arr,0,arr.length-1);
-
-
     }
 
     private static int process(int[] arr, int L, int R) {

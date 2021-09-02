@@ -53,22 +53,19 @@ public class HeapSort {
 
     }
 
+
+
     private static void heapInsert(int[] arr, int i) {
         //构建大根堆
         while (arr[i] > arr[i * 2 + 1]) {
             swap(arr, i, i * 2 + 1);
             i = i * 2 + 1;
         }
-
-
     }
 
     private static void swap(int[] arr, int i, int j) {
-
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
-
 }

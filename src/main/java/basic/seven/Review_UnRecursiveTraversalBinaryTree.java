@@ -83,9 +83,30 @@ public class Review_UnRecursiveTraversalBinaryTree {
     /**
      * 使用一个栈 与有限的几个变量进行后续遍历
      *
+     * 记住这个流程
+     *
      * @param head
      */
     public static void last2(Node head) {
+        //分三个大步骤 搞左树 搞右树 搞头
+
+        if(head != null){
+            Stack<Node> s = new Stack<>();
+            s.push(head);
+            Node c = null;
+            while (!s.isEmpty()){
+                c = s.peek();
+                if(c.left != null && head != c.left && head != c.right) {
+                    s.push(c.left);
+                }else if(c.right != null && head!= c.right){
+                    s.push((c.right));
+                }else {
+                    System.out.println(s.pop().value);
+                    head = c;
+                }
+            }
+
+        }
 
     }
 

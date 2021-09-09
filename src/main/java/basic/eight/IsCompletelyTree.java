@@ -12,7 +12,7 @@ public class IsCompletelyTree {
 
     /**
      * method 1  任何节点有右无左 返回false  否则继续
-     * 一旦遇到左右还是不是双全的节点 那么他的后继节点必须都是叶子节点
+     * 一旦遇到左右不双全的节点 那么他的后继节点必须都是叶子节点
      */
 
     public static class Node {
